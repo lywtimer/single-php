@@ -2,14 +2,14 @@
 
 namespace mszl\lib;
 
-use mszl\lib\service\CourseService;
+use mszl\lib\utils\Api;
 use PHPUnit\Framework\TestCase;
 
 class TestMysql extends TestCase
 {
     public function testConnect() {
 
-        echo CourseService::getInstance()->getHello();
+        var_dump(Api::r('CourseService'));
         $this->assertIsBool(true);
     }
 }
