@@ -14,6 +14,8 @@ if (!function_exists('dateRangeConflict')) {
                 return [$v, $dateRangeArr[$i]];
             }
         }
+
+        return null;
     }
 }
 
